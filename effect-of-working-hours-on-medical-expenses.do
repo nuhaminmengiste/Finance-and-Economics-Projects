@@ -5,8 +5,8 @@
 
  * REGRESSION 
  regress moop_log hours 
-* taking the mean of the categorical variable bins and then plotting them  see session 3.1 class notes
- egen mean_moop = mean(moop_log), by(hours)
+
+ egen mean_moop = mean(moop_log), by(hours) /// taking the mean of the categorical variable bins and then plotting them  see session 3.1 class notes
 scatter mean_moop hours || lfit mean_moop hours
 * controlling some variables and regressing it, 
 * class of worker is in the private sector and age
